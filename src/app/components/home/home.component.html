@@ -1,0 +1,32 @@
+<div class="container">
+    <h1 class="display" style="text-align: center;">Welcome {{username}}  on Stock Appliction</h1>
+    <button class="btn btn-danger" (click)="logout()">LogOut</button>
+    <table class="table table-striped">
+        <thead>
+            <tr class="table-dark">
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Currency</th>
+                <th>Exchange</th>
+                <th>Mic_Code</th>
+                <th>Country</th>
+                <th>Type</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr *ngFor="let stocks of data">
+            <td>{{stocks.symbol}}</td>
+            <td>{{stocks.name}}</td>
+            <td>{{stocks.currency}}</td>
+            <td>{{stocks.exchange}}</td>
+            <td>{{stocks.mic_code}}</td>
+            <td>{{stocks.country}}</td>
+            <td>{{stocks.type}}</td>
+            <td><button class="btn btn-primary" (click)="getData(stocks)">Add To WishList</button></td>
+
+           </tr>
+        </tbody>
+ 
+    </table>
+</div>

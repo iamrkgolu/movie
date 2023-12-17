@@ -1,0 +1,33 @@
+<div class="container">
+    <form [formGroup]="registerForm" class="form">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" class="form-control" formControlName="username" placeholder="Enter Username">
+          </div>
+          <div class="mb-3">
+            <label for="roles" class="form-label">Roles</label>
+            <input type="text" id="roles" class="form-control" formControlName="roles" placeholder="Enter Username">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" formControlName="email" placeholder="Enter Username">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" class="form-control" formControlName="password" placeholder="Enter Username">
+          </div>
+
+          <div class="mb-3">
+            <label for="securityQuestion" class="form-label">SecurityQuestion</label>
+            <input type="text" id="securityQuestion" class="form-control" formControlName="securityQuestion" placeholder="Enter Username">
+          </div>
+          <div class="mb-3">
+            <label for="securityAnswer" class="form-label">SecurityAnswer</label>
+            <input type="text" id="securityAnswer" class="form-control" formControlName="securityAnswer" placeholder="Enter Username">
+          </div>
+
+          <button class="btn btn-primary" (click)="registerUser()">Register</button>
+
+    </form>
+</div>
